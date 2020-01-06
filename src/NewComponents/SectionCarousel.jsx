@@ -68,10 +68,10 @@ render = () => {
 
 
               <MDBView hover zoom className="shadow-box-example  " >
-                <MDBCard cascade narrow ecommerce className="m-4">
+                <MDBCard cascade narrow ecommerce className="m-4 shadow-box-example z-depth-2">
                 <MDBCardImage 
              draggable={false}
-             style={{ width: "100%", height: "100%" , padding: "0 2em"}}
+             style={{ width: "100%", height: "100%" }}
              src={image} alt="alt show"
            />
 
@@ -145,7 +145,7 @@ render = () => {
 
                     <MDBCardText>
                   
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
+                      Neque porro quisquam est,
                     </MDBCardText>
                     <div class="card-footer d-flex  ">
                    
