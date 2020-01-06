@@ -60,6 +60,8 @@ render = () => {
       responsive={responsive}
       focusOnSelect={true}
       containerClass="carousel-container" 
+      autoPlay
+    autoPlaySpeed={5000}
     >
       {images.slice(0, 8).map(image => {
         return (
@@ -94,6 +96,9 @@ render = () => {
                      <span className=" store-icon" >
                 <a className="material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Add to Cart">
                   <i className="fas fa-shopping-cart  ml-3"></i>
+                </a>
+                <a className="material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Share Now">
+                  <i className="fas fa-share-alt  ml-3"></i>
                 </a>
                 <a className="material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
                   <i className="fas fa-heart  ml-3"></i>
