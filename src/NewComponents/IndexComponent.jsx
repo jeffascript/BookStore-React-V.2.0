@@ -9,6 +9,7 @@ import SectionCarousel from './SectionCarousel';
 import CardsShow from './CardsShow';
 import Slide from 'react-reveal/Slide';
 import Rotate from 'react-reveal/Rotate'
+import Footer from './Footer';
 
 
 
@@ -65,12 +66,17 @@ class IndexComponent extends Component {
                 
 
              
+<br/>
 
+
+
+<CardsShow />
 
 
  
 
               </MDBContainer>
+              <Footer/>
             </Router>
           </>
         );
