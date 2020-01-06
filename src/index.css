@@ -101,12 +101,14 @@ input{
 	border: none;
 	font-family: inherit;
 	 font-size: inherit; 
-	color: transparent;
-	background: transparent;
+	color: white;
+	background: #f57a07;
 	cursor: pointer;
-	padding: 15px 60px;
+  padding: 1.2em;
+  /* padding-bottom: 2.5em; */
+  width: 80%;
 	display: inline-block;
-	margin: 15px 30px;
+	margin-bottom: 20em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	/* font-weight: 700; */
@@ -130,7 +132,8 @@ input{
 
 
 .icon-arrow-right:before {
-	content: "\27F6" !important;
+  content: "\27F6" !important;
+  color: #f57a07 !important;
 }
 
 
@@ -139,7 +142,7 @@ input{
 /* Button 4 */
 .btn-4 {
 	border-radius: 50px;
-	border: 3px solid #fff;
+	
 	color: #fff;
 	overflow: hidden;
 }
@@ -149,8 +152,12 @@ input{
 	color: #17954c;
 }
 
+
+
 .bt1:hover {
-	background: #24b662 !important;
+  background: whitesmoke;
+  color: #f57a07 !important;
+  border: 1px solid #f57a07;
 }
 
 .btn-4:before {
@@ -165,7 +172,7 @@ input{
 }
 
 .btn-4:active:before {
-	color: #17954c;
+	color: #f57a07;
 }
 
 /* Button 4a */
@@ -178,6 +185,23 @@ input{
 	left: 80%;
 }
 
+.fas, .far{
+  color: #f57a07 !important;
+ 
+  font-size: 1em;
+  background: white;
+  border: 2px solid white;
+}
+
+.fas:hover, .far:hover {
+  color: white !important;
+  background: #f57a07;
+  border: 1px solid #f57a07;
+}
+
+.store-icon{
+  margin-bottom: 3em;
+}
 
 .hey{
   display: none;
@@ -186,3 +210,4 @@ input{
 .hey:hover{
   display: block !important;
 }
+

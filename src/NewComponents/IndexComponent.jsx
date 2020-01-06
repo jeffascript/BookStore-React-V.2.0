@@ -7,8 +7,8 @@ import ClaimComponent from './ClaimComponent';
 import Fade from 'react-reveal/Fade';
 import SectionCarousel from './SectionCarousel';
 import CardsShow from './CardsShow';
-
-
+import Slide from 'react-reveal/Slide';
+import Rotate from 'react-reveal/Rotate'
 
 
 
@@ -29,28 +29,47 @@ class IndexComponent extends Component {
                   <ClaimComponent />
                 </Fade>
 
+              
+                <Slide top>
                 <section className="text-center my-5">
             <h2 className="h1-responsive font-weight-bold text-center my-5">
               Our bestsellers
             </h2>
             <p className="grey-text text-center w-responsive mx-auto mb-5">
-              Here you can find all the books that we have for sale
+              Here you can find all the books that are best sellers
             </p>
-
-
-
-
+            </section>
+            </Slide>
+           
+            <Fade left>
                <SectionCarousel />
-               </section>
+               </Fade>
 
+             
 
-               
-<br/>
-<h2 className="mt-3 mb-3">Recent books</h2>
-                 <section>
+                <Rotate top right >
+                <section className="text-center my-5">
+            <h2 className="h1-responsive font-weight-bold text-center my-5">
+            Recent books
+            </h2>
+            <p className="grey-text text-center w-responsive mx-auto mb-5">
+              Here you can find all the books that were added recently
+            </p>
+            </section>
+            </Rotate>
+            
+            <Fade left>
                <SectionCarousel />
-               </section>   
-<CardsShow/>
+               </Fade>
+
+                
+
+             
+
+
+
+ 
+
               </MDBContainer>
             </Router>
           </>

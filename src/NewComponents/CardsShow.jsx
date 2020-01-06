@@ -6,6 +6,8 @@ import "../index.css";
 
 
 class CardsShow extends Component {
+
+
     render (){
         return (
         
@@ -20,6 +22,34 @@ class CardsShow extends Component {
                     alt="sample photo"
                     overlay="white-slight"
                   />
+
+<MDBMask className="flex-center d-flex flex-column-reverse  align-items-center" overlay="white-light" >
+
+            
+                   {/* <p className="white-text">Super light overlay</p> */}
+                 {/* <button className=" peach-gradient btn text-center font-weight-bolder shadow-box-example" style={{borderRadius:"1.5em", marginBottom: "5.5em", fontSize: ".15%"}}>Buy Now</button> */}
+                 <button className="bt1  btn-4 btn-4a icon-arrow-right shadow-box-example z-depth-2 mx-1 "  style={{fontSize: "12px", textAlign:"center"}}>
+                     <span>Select Options</span></button>
+
+
+
+                     <span className=" store-icon" >
+                <a className="material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                  <i className="fas fa-shopping-cart  ml-3"></i>
+                </a>
+                <a className="material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                  <i className="fas fa-heart  ml-3"></i>
+                </a>
+              </span>
+
+
+
+
+                 
+               </MDBMask>
+
+
+
                   <MDBCardBody cascade className="text-center ">
                     <a href="#!" className="grey-text">
                       <h5>Denim</h5>
@@ -48,31 +78,18 @@ class CardsShow extends Component {
               
             </li>
 
-            
 
-
-
-
-
-            
 
                     <MDBCardText>
                   
                       Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
                     </MDBCardText>
-                    <div class="card-footer ">
+                    <div class="card-footer d-flex justify-content-between ">
                    
-              <span class="float-left font-weight-bold">
+              <span class=" font-weight-bold">
                 <strong>€119</strong>
               </span>
-              <span className="float-right">
-                <a className="material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                  <i className="fas fa-shopping-cart grey-text ml-3"></i>
-                </a>
-                <a className="material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                  <i className="fas fa-heart grey-text ml-3"></i>
-                </a>
-              </span>
+
          
                    
                    </div>
@@ -82,224 +99,6 @@ class CardsShow extends Component {
               </MDBCol>
 
 
-
-
-
-
-
-
-
-
-
-{/*               
-              <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
-                <MDBCard cascade narrow ecommerce>
-                  <MDBCardImage
-                    cascade
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/2.jpg"
-                    top
-                    alt="sample photo"
-                    overlay="white-slight"
-                  />
-                  <MDBCardBody cascade className="text-center">
-                    <a href="#!" className="grey-text">
-                      <h5>Shoes</h5>
-                    </a>
-                    <MDBCardTitle>
-                      <strong>
-                        <a href="#!">High heels</a>
-                      </strong>
-                    </MDBCardTitle>
-                    <ul className="rating">
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                    </ul>
-                    <MDBCardText>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
-                    </MDBCardText>
-                    <MDBCardFooter className="px-1">
-                      <span className="float-left font-weight-bold">
-                        <strong>89$</strong>
-                      </span>
-                      <span className="float-right">
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-shopping-cart grey-text ml-3"
-                          tooltipContent="Add to cart"
-                        />
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-share-alt grey-text ml-3"
-                          tooltipContent="Share"
-                        />
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-heart grey-text ml-3"
-                          tooltipContent="Add to watchlist"
-                        />
-                      </span>
-                    </MDBCardFooter>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
-                <MDBCard cascade narrow ecommerce>
-                  <MDBCardImage
-                    cascade
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/4.jpg"
-                    top
-                    alt="sample photo"
-                    overlay="white-slight"
-                  />
-                  <MDBCardBody cascade className="text-center">
-                    <a href="#!" className="grey-text">
-                      <h5>Outwear</h5>
-                    </a>
-                    <MDBCardTitle>
-                      <strong>
-                        <a href="#!">Brown coat</a>
-                      </strong>
-                    </MDBCardTitle>
-                    <ul className="rating">
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon far icon="star-half" />
-                      </li>
-                    </ul>
-                    <MDBCardText>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
-                    </MDBCardText>
-                    <MDBCardFooter className="px-1">
-                      <span className="float-left font-weight-bold">
-                        <strong>59$</strong>
-                      </span>
-                      <span className="float-right">
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-shopping-cart grey-text ml-3"
-                          tooltipContent="Add to cart"
-                        />
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-share-alt grey-text ml-3"
-                          tooltipContent="Share"
-                        />
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-heart grey-text ml-3"
-                          tooltipContent="Add to watchlist"
-                        />
-                      </span>
-                    </MDBCardFooter>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
-                <MDBCard cascade narrow ecommerce>
-                  <MDBCardImage
-                    cascade
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/3.jpg"
-                    top
-                    alt="sample photo"
-                    overlay="white-slight"
-                  />
-                  <MDBCardBody cascade className="text-center">
-                    <a href="#!" className="grey-text">
-                      <h5>Blouses</h5>
-                    </a>
-                    <MDBCardTitle>
-                      <strong>
-                        <a href="#!">Shirt</a>
-                      </strong>
-                    </MDBCardTitle>
-                    <ul className="rating">
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon icon="star" />
-                      </li>
-                      <li>
-                        <MDBIcon far icon="star" />
-                      </li>
-                    </ul>
-                    <MDBCardText>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
-                    </MDBCardText>
-                    <MDBCardFooter className="px-1">
-                      <span className="float-left font-weight-bold">
-                        <strong>119$</strong>
-                      </span>
-                      <span className="float-right">
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-shopping-cart grey-text ml-3"
-                          tooltipContent="Add to cart"
-                        />
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          componentClass="fa fa-share-alt grey-text ml-3"
-                          tooltipContent="Share"
-                        />
-                        <MDBTooltip
-                          placement="top"
-                          tag="a"
-                          component="i"
-                          className="active"
-                          componentClass="fa fa-heart ml-3"
-                          tooltipContent="Added to watchlist"
-                        />
-                      </span>
-                    </MDBCardFooter>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol> */}
             </MDBRow>
         
         );
